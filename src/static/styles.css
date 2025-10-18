@@ -142,3 +142,67 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participants section styling */
+.participants {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #eee;
+}
+
+.participants h5 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #222;
+  font-weight: 600;
+}
+
+.participants-list {
+  list-style: none; /* hide default bullets */
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 14px;
+  color: #444;
+  word-break: break-word;
+  padding: 6px 8px;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+}
+
+/* Delete (trash) button */
+.participant-delete {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+.participant-delete:hover {
+  color: #f44336;
+}
+.participant-delete:focus {
+  outline: 2px solid rgba(196, 24, 24, 0.2);
+  outline-offset: 2px;
+}
+
+.participants-empty {
+  font-style: italic;
+  color: #777;
+  font-size: 14px;
+  margin: 0;
+}
